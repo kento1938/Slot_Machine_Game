@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slot Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="slots" class="grid-container">
+    <div class="slot" id="slot1"></div>
+    <div class="slot" id="slot2"></div>
+    <div class="slot" id="slot3"></div>
+    <div class="slot" id="slot4"></div>
+    <div class="slot" id="slot5"></div>
+    <div class="slot" id="slot6"></div>
+    <div class="slot" id="slot7"></div>
+    <div class="slot" id="slot8"></div>
+    <div class="slot" id="slot9"></div>
+  </div>
+  <div id="score">Score: <span id="scoreValue">0</span></div>
+  <table id="paytable">
+    <tr>
+      <th>Symbol</th>
+      <th>Multiplier</th>
+    </tr>
+    <tr>
+      <td>🍒</td>
+      <td>3x</td>
+    </tr>
+    <tr>
+      <td>🍋</td>
+      <td>5x</td>
+    </tr>
+    <tr>
+      <td>🍊</td>
+      <td>10x</td>
+    </tr>
+    <tr>
+      <td>🍇</td>
+      <td>15x</td>
+    </tr>
+    <tr>
+      <td>🍉</td>
+      <td>20x</td>
+    </tr>
+  </table>
+  <button id="spinButton">Spin</button>
+  <audio id="bgm" loop>
+    <source src="bgm/background_music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <button id="bgmButton">BGM Off</button>
+  <script src="script.js"></script>
+</body>
+</html>

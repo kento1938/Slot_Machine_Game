@@ -1,0 +1,86 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3;
+}
+
+#slots {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.slot {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #999;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #333;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#score {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#paytable {
+  width: 300px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 2px solid #999;
+  border-radius: 10px;
+}
+
+#paytable th {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#paytable td {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  border-top: 1px solid #999;
+}
+
+#paytable td:first-child {
+  font-size: 24px;
+}
+
+#paytable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#paytable tr:hover {
+  background-color: #ddd;
+}
